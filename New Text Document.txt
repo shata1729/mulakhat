@@ -1,0 +1,48 @@
+Topics Questions
+General 
+TypeScript What is TypeScript, and how does it differ from JavaScript?
+What are the differences between interfaces and type aliases in TypeScript?
+How do you handle null and undefined in TypeScript?
+Explain the concept of generics in TypeScript
+What are decorators in TypeScript
+Explain the concept of type guards in TypeScript
+What is the never type in TypeScript
+How do you handle enums in TypeScript
+Micro-Service How do microservices communicate with each other? Explain various communication protocols and patterns
+Explain the concept of service discovery in microservices architecture.
+What is containerization, and how does it relate to microservices?
+What is the role of API gateways
+Explain the differences between synchronous and asynchronous communication in microservices.
+What are the security measures that can be implemented for an API gateway in a microservices architecture.
+System Design/Pattern Explain what SOLID principles are
+What are design patterns, and why are they important in software development?
+Describe the Singleton pattern.
+Explain the Factory Method pattern
+What is the Observer pattern
+Explain the Decorator pattern
+Security What are some common security vulnerabilities in Node.js applications
+Explain XSS attacks and how to prevent it.
+What is Cross-Site Request Forgery (CSRF)
+Explain the concept of SQL injection attacks.
+What are some best practices that must be implemented to secure the application
+What is rate limiting and helmet package for securing header
+Error Handling What is error handling in Node.js and why is it important?
+How do you handle errors in asynchronous code in Node.js?
+What is the difference between operational errors and programmer errors?
+How does the try...catch block work in Node.js?
+What is the role of the process object in error handling?
+How can you handle uncaught exceptions in Node.js?
+Explain the use of Promise and async/await in error handling.
+How do you handle errors in callback functions?
+What is a global error handler and how do you implement one in Node.js?
+How do you manage error logging in a Node.js application?
+How do you handle errors in Express.js middleware?
+What is the error-first callback pattern?
+Good to have 
+Briefly explain the purpose and benefits of using Kubernetes in container orchestration.
+Describe the CI/CD pipeline and its role in automating the software development lifecycle.
+Explain how Docker containers provide isolation and portability for backend applications.
+Differentiate between RESTful APIs and GraphQL and discuss potential use cases for GraphQL.
+Describe the role of Kafka as a distributed streaming platform.
+Explain the components of the ELK Stack (Elasticsearch, Logstash, Kibana) and its use for log management and analytics.
+Discuss how message queues facilitate asynchronous communication between backend services.

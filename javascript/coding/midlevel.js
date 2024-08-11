@@ -125,3 +125,92 @@ console.log("start")
 // Ex8
 // Develop a function that throttles another function, allowing it to be called at most once every specified interval (e.g., 300ms). The throttling function will have two input parameters. One will be the function to be throttled and the second will be the interval in milliseconds. The throttled function should be called with the same arguments as the original function.
 
+// Ex9
+// const arr = [1, 2, 3, 4, 5];
+// const sum = arr.reduce((total, num) => total + num);
+// console.log(sum / arr.length);
+
+// OUTPUT:
+// 3
+
+// Ex10
+// Design a simple meeting scheduler that finds the first available time slot for a meeting between two people. Given two arrays of busy time intervals and a meeting duration, create a function that returns the earliest available time slot for the meeting when both people will be available. Each interval is represented as an array of two integers, where the first integer is the start time and the second integer is the end time
+// Given the availability time slots arrays slots1 and slots2 of two people and a meeting duration duration, return the earliest time slot that works for both of them and is of duration duration.
+
+// If there is no common time slot that satisfies the requirements, return an empty array.
+
+// The format of a time slot is an array of two elements [start, end] representing an inclusive time range from start to end.  
+
+// It is guaranteed that no two availability slots of the same person intersect with each other. That is, for any two time slots [start1, end1] and [start2, end2] of the same person, either start1 > end2 or start2 > end1.
+
+// Input: slots1 = [[10,50],[60,120],[140,210]], slots2 = [[0,15],[60,70]], duration = 8
+// Output: [60,68]
+// Example 2:
+
+// Input: slots1 = [[10,50],[60,120],[140,210]], slots2 = [[0,15],[60,70]], duration = 12
+// Output: []
+
+let slots1 = [[10, 50], [60, 120], [140, 210]], slots2 = [[0, 15], [60, 70]], duration = 8;
+// let slots1 = [[10,50],[60,120],[140,210]], slots2 = [[0,15],[60,70]], duration = 12;
+
+
+// Ex11
+// Is there any security vulnerability in the below code? If yes, identify it:
+
+// const username = document.getElementById('username').value;
+// const password = document.getElementById('password').value;
+// fetch('https://api.examplewebsite.com/login', {
+//   method: 'POST',
+//   body: JSON.stringify({ username, password })
+// })
+// .then(response => response.json())
+// .then(data => console.log(data))
+// .catch(error => console.log(error));
+
+// Ex12
+// const testArray = [1, 2, 3, 4, 5];
+// const res = testArray.reduce((acc, curr) => {
+//   if (curr % 2 === 0) {
+// 	return acc + curr;
+//   }
+//   return acc;
+// }, 0);
+// console.log(res);
+
+// OUTPUT: 6
+
+// Ex13
+// What is the possible performance issue in the below code ?
+
+// const arr = [];
+// for (let i = 0; i < 1000000; i++) {
+//     arr.push(Math.floor(Math.random() * 1000));
+// }
+// console.log(arr)
+
+// Ex15
+// Suggest the output of the below code:
+
+// const arr = [1, 2, 3];
+// const object1 = { x: 1, y: 2, z: 3 };
+// console.log(...arr);
+// console.log(...Object.entries(object1));
+// console.log([...object1]);
+// console.log(...arr);
+
+// OUTPUT:
+// 1 2 3
+// Spread syntax requires ...iterable[Symbol.iterator] to be a function
+
+// Ex16
+// What is wrong with the below call to the API?
+
+fetch('https://api.github.com/user/shata1729')
+  .then(response => {
+	if (!response.ok) {
+  	throw new Error('Network response was not ok');
+	}
+	return response.json();
+  })
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
