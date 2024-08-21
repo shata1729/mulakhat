@@ -1,0 +1,20 @@
+id country
+
+select id from students
+where countryName IN(
+select countryName from students
+group by countryName
+having count(id)>=5
+)
+
+call logs
+callNumber, callType - incoming/outgoing, duration 
+
+1 incoming 10
+1 incoming 10
+1 outgoing 50
+
+select callNumber,sum(callDuration) from callLogs
+where callType='incoming' and duration > 0 
+groupby callNumber
+
