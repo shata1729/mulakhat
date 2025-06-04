@@ -41,6 +41,7 @@
 
 // conerting any function to its curried version
 function curryFunction(func) {
+
     return function curriedFunction(...args) {
         if (args.length >= func.length) {
             return func.call(this, ...args);
@@ -51,12 +52,12 @@ function curryFunction(func) {
     }
 }
 
-// function add(num1, num2, num3) {
-//     return num1 + num2 + num3;
-// }
+function add(num1, num2, num3) {
+    return num1 + num2 + num3;
+}
 
 // console.log(add(1,2,3,4))
 
 const curriedAdd = curryFunction(add);
-const sum = curriedAdd(1)(2)(3);
-console.log(sum);
+const sum = curriedAdd(1)(2);
+console.log(sum(2));

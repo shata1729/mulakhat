@@ -33,4 +33,4 @@ function list3() {
     }
 }
 
-list3()
+list3();

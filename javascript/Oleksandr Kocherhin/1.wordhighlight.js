@@ -4,5 +4,5 @@ paragraph.innerHTML = paragraph.innerHTML.split(" ").map((word) => {
     return word.length > 8 ? `<span style="background-color:yellow">${word}</span>` : word;
 }).join(" ");
 
-// Split each new sentence on the neew line in paragraph.
-paragraph.innerHTML=paragraph.innerHTML.split(/\.[^.|<]/).join(".</p><p>")+"</p>"
+// Split each new sentence on the new line in paragraph.
+paragraph.innerHTML = paragraph.innerHTML.split(/\.[^.|<]/).join(".</p><p>") + "</p>"

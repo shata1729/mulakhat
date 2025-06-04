@@ -1,4 +1,4 @@
-import { test, it, expect } from 'vitest';
+// import { test, it, expect } from 'vitest';
 import { add } from './math';
 // test = it
 it('should sum all number values in an array', () => {
